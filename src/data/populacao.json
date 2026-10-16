@@ -140,6 +140,11 @@
       "ano": 2025,
       "valor": 41527,
       "origem": "estimativa"
+    },
+    {
+      "ano": 2026,
+      "valor": 41633,
+      "origem": "estimativa"
     }
   ],
   "anosInterpolados": [

@@ -39,6 +39,17 @@ const NOTAS = [
       'marcando cada ponto pela origem. Indicadores por habitante nesses anos são aproximados.',
   },
   {
+    titulo: 'A produção agrícola é estimativa, não censo',
+    texto:
+      'A Produção Agrícola Municipal não percorre propriedade por propriedade: é estimada por ' +
+      'painel técnico estadual a partir de informantes qualificados. Em municípios pequenos a ' +
+      'estimativa tende a repetir o número do ano anterior quando não há informação nova. Em ' +
+      'Socorro isso é visível: até 2024 havia doze culturas com a área colhida idêntica por ' +
+      'cinco a onze anos seguidos, e a cana-de-açúcar ficou nove anos travada em 300 hectares ' +
+      'até ser corrigida para 5 hectares em 2025. Trate estes números como ordem de grandeza, ' +
+      'e prefira o Censo Agropecuário quando precisar de precisão.',
+  },
+  {
     titulo: 'Omissões por sigilo estatístico',
     texto:
       'O IBGE suprime valores quando o número de informantes é pequeno o bastante para permitir ' +

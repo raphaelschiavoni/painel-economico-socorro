@@ -34,7 +34,7 @@ export function SecaoAgro() {
           titulo={`Valor da produção agrícola por cultura — ${agro.ano}`}
           descricao="Dez principais culturas por valor da produção."
           fonte={agro.fonte[0]}
-          nota="Lavouras temporárias e permanentes. Valores nominais do ano de referência."
+          nota="Lavouras temporárias e permanentes, em valores nominais do ano. A PAM é estimativa de painel técnico, não levantamento campo a campo — veja a ressalva na seção 8 antes de usar estes números em decisão."
           tabela={{
             colunas: [
               'Cultura',
