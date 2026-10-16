@@ -106,6 +106,20 @@ export const FONTES = {
     tabela: 'DCA Anexos I-C e I-E',
     url: 'https://siconfi.tesouro.gov.br/siconfi/pages/public/consulta_finbra/finbra_list.jsf',
   },
+  censoAgro: {
+    id: 'ibge-censo-agro',
+    titulo: 'Censo Agropecuário 2017',
+    orgao: 'IBGE',
+    tabela: 'SIDRA 6957 e 6966',
+    url: 'https://sidra.ibge.gov.br/pesquisa/censo-agropecuario/censo-agropecuario-2017',
+  },
+  municipal: {
+    id: 'levantamento-municipal',
+    titulo: 'Levantamento da Secretaria de Desenvolvimento Econômico',
+    orgao: 'Prefeitura de Socorro',
+    tabela: 'src/data/municipal.json',
+    url: '#fontes',
+  },
   malha: {
     id: 'ibge-malhas',
     titulo: 'Malha Territorial Municipal',
@@ -114,3 +128,40 @@ export const FONTES = {
     url: 'https://servicodados.ibge.gov.br/api/docs/malhas',
   },
 };
+
+/**
+ * Equivalência entre os nomes de produto da PAM (estimativa anual) e os do
+ * Censo Agropecuário (levantamento real, de 2017). Os recortes não coincidem:
+ * o Censo separa o feijão por tipo e distingue milho em grão de milho
+ * forrageiro. O mapeamento é explícito de propósito — casar nome por
+ * semelhança silenciosamente juntaria coisas diferentes.
+ */
+export const EQUIVALENCIA_CENSO = {
+  'Abacate': ['Abacate'],
+  'Abóbora': ['Abóbora, moranga, jerimum'],
+  'Arroz (em casca)': ['Arroz em casca'],
+  'Banana (cacho)': ['Banana'],
+  'Batata-doce': ['Batata-doce'],
+  'Batata-inglesa': ['Batata-inglesa'],
+  'Café (em grão)': ['Café arábica em grão (verde)', 'Café canephora (conilon) em grão (verde)'],
+  'Cana-de-açúcar': ['Cana-de-açúcar'],
+  'Cenoura': ['Cenoura'],
+  'Feijão (em grão)': [
+    'Feijão de cor em grão',
+    'Feijão preto em grão',
+    'Feijão fradinho em grão',
+    'Feijão verde',
+  ],
+  'Laranja': ['Laranja'],
+  'Limão': ['Limão'],
+  'Mandioca': ['Mandioca (aipim, macaxeira)'],
+  'Milho (em grão)': ['Milho em grão'],
+  'Soja (em grão)': ['Soja em grão'],
+  'Tangerina': ['Tangerina, bergamota, mexerica'],
+  'Tomate': ['Tomate rasteiro (industrial)', 'Tomate envarado (mesa)'],
+  'Trigo (em grão)': ['Trigo em grão'],
+  'Uva': ['Uva (mesa)', 'Uva (vinho ou suco)'],
+};
+
+/** A partir de quantos anos parados consideramos a estimativa suspeita. */
+export const LIMITE_ANOS_PARADOS = 4;

@@ -13,6 +13,13 @@
       "orgao": "IBGE",
       "tabela": "SIDRA 3939",
       "url": "https://sidra.ibge.gov.br/tabela/3939"
+    },
+    {
+      "id": "ibge-censo-agro",
+      "titulo": "Censo Agropecuário 2017",
+      "orgao": "IBGE",
+      "tabela": "SIDRA 6957 e 6966",
+      "url": "https://sidra.ibge.gov.br/pesquisa/censo-agropecuario/censo-agropecuario-2017"
     }
   ],
   "ano": 2025,
@@ -20,169 +27,483 @@
   "produtos": [
     {
       "produto": "Café (em grão)",
+      "areaPlantadaHa": 2700,
       "areaColhidaHa": 2700,
       "quantidadeToneladas": 3961,
-      "valorMilReais": 74982
+      "valorMilReais": 74982,
+      "anosParados": 6,
+      "paradoDesde": 2020,
+      "censo2017": {
+        "areaColhidaHa": 1870,
+        "produtos": [
+          "Café arábica em grão (verde)"
+        ]
+      }
     },
     {
       "produto": "Soja (em grão)",
+      "areaPlantadaHa": 2000,
       "areaColhidaHa": 2000,
       "quantidadeToneladas": 8000,
-      "valorMilReais": 16240
+      "valorMilReais": 16240,
+      "anosParados": 1,
+      "paradoDesde": null,
+      "censo2017": {
+        "areaColhidaHa": 352,
+        "produtos": [
+          "Soja em grão"
+        ]
+      }
     },
     {
       "produto": "Abacate",
+      "areaPlantadaHa": 150,
       "areaColhidaHa": 150,
       "quantidadeToneladas": 3600,
-      "valorMilReais": 12881
+      "valorMilReais": 12881,
+      "anosParados": 1,
+      "paradoDesde": null,
+      "censo2017": {
+        "areaColhidaHa": 75,
+        "produtos": [
+          "Abacate"
+        ]
+      }
     },
     {
       "produto": "Milho (em grão)",
+      "areaPlantadaHa": 1800,
       "areaColhidaHa": 1800,
       "quantidadeToneladas": 10200,
-      "valorMilReais": 12750
+      "valorMilReais": 12750,
+      "anosParados": 2,
+      "paradoDesde": null,
+      "censo2017": {
+        "areaColhidaHa": 1200,
+        "produtos": [
+          "Milho em grão"
+        ]
+      }
     },
     {
       "produto": "Laranja",
+      "areaPlantadaHa": 150,
       "areaColhidaHa": 150,
       "quantidadeToneladas": 4200,
-      "valorMilReais": 12113
+      "valorMilReais": 12113,
+      "anosParados": 1,
+      "paradoDesde": null,
+      "censo2017": {
+        "areaColhidaHa": 374,
+        "produtos": [
+          "Laranja"
+        ]
+      }
     },
     {
       "produto": "Batata-inglesa",
+      "areaPlantadaHa": 210,
       "areaColhidaHa": 210,
       "quantidadeToneladas": 4785,
-      "valorMilReais": 5981
+      "valorMilReais": 5981,
+      "anosParados": 10,
+      "paradoDesde": 2016,
+      "censo2017": {
+        "areaColhidaHa": 249,
+        "produtos": [
+          "Batata-inglesa"
+        ]
+      }
     },
     {
       "produto": "Tomate",
+      "areaPlantadaHa": 25,
       "areaColhidaHa": 25,
       "quantidadeToneladas": 1250,
-      "valorMilReais": 4015
+      "valorMilReais": 4015,
+      "anosParados": 9,
+      "paradoDesde": 2017,
+      "censo2017": {
+        "areaColhidaHa": 4,
+        "produtos": [
+          "Tomate rasteiro (industrial)"
+        ]
+      }
     },
     {
       "produto": "Banana (cacho)",
+      "areaPlantadaHa": 90,
       "areaColhidaHa": 90,
       "quantidadeToneladas": 1800,
-      "valorMilReais": 3893
+      "valorMilReais": 3893,
+      "anosParados": 1,
+      "paradoDesde": null,
+      "censo2017": {
+        "areaColhidaHa": 79,
+        "produtos": [
+          "Banana"
+        ]
+      }
     },
     {
       "produto": "Morango",
+      "areaPlantadaHa": 7,
       "areaColhidaHa": 7,
       "quantidadeToneladas": 189,
-      "valorMilReais": 3428
+      "valorMilReais": 3428,
+      "anosParados": 1,
+      "paradoDesde": null,
+      "censo2017": null
     },
     {
       "produto": "Tangerina",
+      "areaPlantadaHa": 40,
       "areaColhidaHa": 40,
       "quantidadeToneladas": 707,
-      "valorMilReais": 2404
+      "valorMilReais": 2404,
+      "anosParados": 3,
+      "paradoDesde": null,
+      "censo2017": {
+        "areaColhidaHa": 98,
+        "produtos": [
+          "Tangerina, bergamota, mexerica"
+        ]
+      }
     },
     {
       "produto": "Aveia (em grão)",
+      "areaPlantadaHa": 800,
       "areaColhidaHa": 800,
       "quantidadeToneladas": 1760,
-      "valorMilReais": 2288
+      "valorMilReais": 2288,
+      "anosParados": 1,
+      "paradoDesde": null,
+      "censo2017": null
     },
     {
       "produto": "Milho verde",
+      "areaPlantadaHa": 50,
       "areaColhidaHa": 50,
       "quantidadeToneladas": 1000,
-      "valorMilReais": 2055
+      "valorMilReais": 2055,
+      "anosParados": 1,
+      "paradoDesde": null,
+      "censo2017": null
     },
     {
       "produto": "Feijão (em grão)",
+      "areaPlantadaHa": 300,
       "areaColhidaHa": 300,
       "quantidadeToneladas": 525,
-      "valorMilReais": 1995
+      "valorMilReais": 1995,
+      "anosParados": 9,
+      "paradoDesde": 2017,
+      "censo2017": {
+        "areaColhidaHa": 188,
+        "produtos": [
+          "Feijão de cor em grão",
+          "Feijão fradinho em grão",
+          "Feijão verde"
+        ]
+      }
     },
     {
       "produto": "Pimentão",
+      "areaPlantadaHa": 15,
       "areaColhidaHa": 15,
       "quantidadeToneladas": 370,
-      "valorMilReais": 1729
+      "valorMilReais": 1729,
+      "anosParados": 1,
+      "paradoDesde": null,
+      "censo2017": null
     },
     {
       "produto": "Alface",
+      "areaPlantadaHa": 24,
       "areaColhidaHa": 24,
       "quantidadeToneladas": 384,
-      "valorMilReais": 1667
+      "valorMilReais": 1667,
+      "anosParados": 1,
+      "paradoDesde": null,
+      "censo2017": null
     },
     {
       "produto": "Repolho",
+      "areaPlantadaHa": 15,
       "areaColhidaHa": 15,
       "quantidadeToneladas": 450,
-      "valorMilReais": 786
+      "valorMilReais": 786,
+      "anosParados": 1,
+      "paradoDesde": null,
+      "censo2017": null
     },
     {
       "produto": "Chuchu",
+      "areaPlantadaHa": 5,
       "areaColhidaHa": 5,
       "quantidadeToneladas": 300,
-      "valorMilReais": 672
+      "valorMilReais": 672,
+      "anosParados": 1,
+      "paradoDesde": null,
+      "censo2017": null
     },
     {
       "produto": "Cenoura",
+      "areaPlantadaHa": 8,
       "areaColhidaHa": 8,
       "quantidadeToneladas": 240,
-      "valorMilReais": 635
+      "valorMilReais": 635,
+      "anosParados": 1,
+      "paradoDesde": null,
+      "censo2017": null
     },
     {
       "produto": "Abóbora",
+      "areaPlantadaHa": 20,
       "areaColhidaHa": 20,
       "quantidadeToneladas": 300,
-      "valorMilReais": 600
+      "valorMilReais": 600,
+      "anosParados": 1,
+      "paradoDesde": null,
+      "censo2017": {
+        "areaColhidaHa": 4,
+        "produtos": [
+          "Abóbora, moranga, jerimum"
+        ]
+      }
     },
     {
       "produto": "Batata-doce",
+      "areaPlantadaHa": 15,
       "areaColhidaHa": 15,
       "quantidadeToneladas": 300,
-      "valorMilReais": 583
+      "valorMilReais": 583,
+      "anosParados": 1,
+      "paradoDesde": null,
+      "censo2017": null
     },
     {
       "produto": "Uva",
+      "areaPlantadaHa": 5,
       "areaColhidaHa": 5,
       "quantidadeToneladas": 60,
-      "valorMilReais": 539
+      "valorMilReais": 539,
+      "anosParados": 6,
+      "paradoDesde": 2020,
+      "censo2017": {
+        "areaColhidaHa": 2,
+        "produtos": [
+          "Uva (mesa)",
+          "Uva (vinho ou suco)"
+        ]
+      }
     },
     {
       "produto": "Mandioca",
+      "areaPlantadaHa": 10,
       "areaColhidaHa": 10,
       "quantidadeToneladas": 200,
-      "valorMilReais": 520
+      "valorMilReais": 520,
+      "anosParados": 1,
+      "paradoDesde": null,
+      "censo2017": {
+        "areaColhidaHa": 55,
+        "produtos": [
+          "Mandioca (aipim, macaxeira)"
+        ]
+      }
     },
     {
       "produto": "Trigo (em grão)",
+      "areaPlantadaHa": 120,
       "areaColhidaHa": 120,
       "quantidadeToneladas": 384,
-      "valorMilReais": 453
+      "valorMilReais": 453,
+      "anosParados": 1,
+      "paradoDesde": null,
+      "censo2017": null
     },
     {
       "produto": "Limão",
+      "areaPlantadaHa": 5,
       "areaColhidaHa": 5,
       "quantidadeToneladas": 100,
-      "valorMilReais": 238
+      "valorMilReais": 238,
+      "anosParados": 4,
+      "paradoDesde": 2022,
+      "censo2017": null
     },
     {
       "produto": "Caqui",
+      "areaPlantadaHa": 2,
       "areaColhidaHa": 2,
       "quantidadeToneladas": 50,
-      "valorMilReais": 196
+      "valorMilReais": 196,
+      "anosParados": 1,
+      "paradoDesde": null,
+      "censo2017": null
     },
     {
       "produto": "Cana-de-açúcar",
+      "areaPlantadaHa": 5,
       "areaColhidaHa": 5,
       "quantidadeToneladas": 400,
-      "valorMilReais": 90
+      "valorMilReais": 90,
+      "anosParados": 1,
+      "paradoDesde": null,
+      "censo2017": {
+        "areaColhidaHa": 53,
+        "produtos": [
+          "Cana-de-açúcar"
+        ]
+      }
     },
     {
       "produto": "Arroz (em casca)",
+      "areaPlantadaHa": 10,
       "areaColhidaHa": 10,
       "quantidadeToneladas": 23,
-      "valorMilReais": 46
+      "valorMilReais": 46,
+      "anosParados": 1,
+      "paradoDesde": null,
+      "censo2017": {
+        "areaColhidaHa": 1,
+        "produtos": [
+          "Arroz em casca"
+        ]
+      }
     }
   ],
+  "censo2017": {
+    "ano": 2017,
+    "produtos": [
+      {
+        "produto": "Total",
+        "areaColhidaHa": 2528,
+        "valorMilReais": 16732
+      },
+      {
+        "produto": "Abóbora, moranga, jerimum",
+        "areaColhidaHa": 4,
+        "valorMilReais": 36
+      },
+      {
+        "produto": "Arroz em casca",
+        "areaColhidaHa": 1,
+        "valorMilReais": 4
+      },
+      {
+        "produto": "Batata-inglesa",
+        "areaColhidaHa": 249,
+        "valorMilReais": 6753
+      },
+      {
+        "produto": "Cana-de-açúcar",
+        "areaColhidaHa": 53,
+        "valorMilReais": 1228
+      },
+      {
+        "produto": "Feijão de cor em grão",
+        "areaColhidaHa": 175,
+        "valorMilReais": 606
+      },
+      {
+        "produto": "Feijão fradinho em grão",
+        "areaColhidaHa": 7,
+        "valorMilReais": 24
+      },
+      {
+        "produto": "Feijão verde",
+        "areaColhidaHa": 6,
+        "valorMilReais": 10
+      },
+      {
+        "produto": "Mandioca (aipim, macaxeira)",
+        "areaColhidaHa": 55,
+        "valorMilReais": 774
+      },
+      {
+        "produto": "Milho em grão",
+        "areaColhidaHa": 1200,
+        "valorMilReais": 3922
+      },
+      {
+        "produto": "Soja em grão",
+        "areaColhidaHa": 352,
+        "valorMilReais": 1231
+      },
+      {
+        "produto": "Sorgo vassoura",
+        "areaColhidaHa": 9,
+        "valorMilReais": 11
+      },
+      {
+        "produto": "Tomate rasteiro (industrial)",
+        "areaColhidaHa": 4,
+        "valorMilReais": 74
+      },
+      {
+        "produto": "Forrageiras para corte",
+        "areaColhidaHa": 11,
+        "valorMilReais": 23
+      },
+      {
+        "produto": "Cana forrageira",
+        "areaColhidaHa": 73,
+        "valorMilReais": 159
+      },
+      {
+        "produto": "Milho forrageiro",
+        "areaColhidaHa": 521,
+        "valorMilReais": 1194
+      },
+      {
+        "produto": "Outros produtos",
+        "areaColhidaHa": 46,
+        "valorMilReais": 676
+      },
+      {
+        "produto": "Abacate",
+        "areaColhidaHa": 75
+      },
+      {
+        "produto": "Atemoia",
+        "areaColhidaHa": 5
+      },
+      {
+        "produto": "Banana",
+        "areaColhidaHa": 79
+      },
+      {
+        "produto": "Café arábica em grão (verde)",
+        "areaColhidaHa": 1870
+      },
+      {
+        "produto": "Laranja",
+        "areaColhidaHa": 374
+      },
+      {
+        "produto": "Pitaia",
+        "areaColhidaHa": 19
+      },
+      {
+        "produto": "Tangerina, bergamota, mexerica",
+        "areaColhidaHa": 98
+      },
+      {
+        "produto": "Uva (mesa)",
+        "areaColhidaHa": 1
+      },
+      {
+        "produto": "Uva (vinho ou suco)",
+        "areaColhidaHa": 1
+      }
+    ]
+  },
+  "limiteAnosParados": 4,
   "valorTotalMilReais": 163779,
   "areaTotalHa": 8581,
+  "areaPlantadaTotalHa": 8581,
   "rebanhos": [
     {
       "tipo": "Galináceos",

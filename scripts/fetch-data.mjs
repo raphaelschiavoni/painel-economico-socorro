@@ -9,7 +9,15 @@ import { writeFile, readFile, mkdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { MUNICIPIO, COMPARATIVO, SECOES_CNAE, MACROSSETOR, FONTES } from './fontes.mjs';
+import {
+  MUNICIPIO,
+  COMPARATIVO,
+  SECOES_CNAE,
+  MACROSSETOR,
+  FONTES,
+  EQUIVALENCIA_CENSO,
+  LIMITE_ANOS_PARADOS,
+} from './fontes.mjs';
 
 const RAIZ = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DESTINO = path.join(RAIZ, 'src', 'data');
@@ -288,11 +296,62 @@ function semDuplaContagem(itens, rotulo) {
   });
 }
 
-async function coletarAgro() {
-  const lavouras = await sidra(`/t/5457/n6/${MUNICIPIO.codigo}/v/216,214,215/p/last%201/c782/all`);
-  const rebanhos = await sidra(`/t/3939/n6/${MUNICIPIO.codigo}/v/105/p/last%201/c79/all`);
+/**
+ * Há quantos anos seguidos a área colhida não muda. A PAM é estimativa de
+ * painel técnico: quando não entra informação nova do município, ela repete o
+ * número do ano anterior. Série parada por muitos anos é o sintoma disso.
+ */
+function anosParados(serieDoProduto, anoReferencia) {
+  const area = (ano) => serieDoProduto[String(ano)];
+  const referencia = area(anoReferencia);
+  if (referencia == null) return null;
 
-  const VAR = { 216: 'areaColhidaHa', 214: 'quantidadeToneladas', 215: 'valorMilReais' };
+  let anos = 0;
+  for (let ano = anoReferencia; ano >= anoReferencia - 40; ano--) {
+    if (area(ano) === referencia) anos++;
+    else break;
+  }
+  return { anos, desde: anoReferencia - anos + 1 };
+}
+
+/** Censo Agropecuário 2017: levantamento real, serve de contraprova da PAM. */
+async function coletarCensoAgro() {
+  const temporarias = await sidra(
+    `/t/6957/n6/${MUNICIPIO.codigo}/v/10089,10087/p/2017/c226/all`,
+  );
+  const permanentes = await sidra(`/t/6966/n6/${MUNICIPIO.codigo}/v/10078/p/2017/c227/all`);
+
+  const porProduto = new Map();
+  const registrar = (nome, campo, valor) => {
+    if (valor == null) return;
+    if (!porProduto.has(nome)) porProduto.set(nome, { produto: nome });
+    porProduto.get(nome)[campo] = valor;
+  };
+
+  for (const linha of temporarias) {
+    if (linha.D4C === '0') continue;
+    registrar(linha.D4N, linha.D2C === '10089' ? 'areaColhidaHa' : 'valorMilReais', num(linha.V));
+  }
+  for (const linha of permanentes) {
+    if (linha.D4C === '0') continue;
+    registrar(linha.D4N, 'areaColhidaHa', num(linha.V));
+  }
+
+  return [...porProduto.values()].filter((p) => p.areaColhidaHa);
+}
+
+async function coletarAgro() {
+  const lavouras = await sidra(`/t/5457/n6/${MUNICIPIO.codigo}/v/8331,216,214,215/p/last%201/c782/all`);
+  const rebanhos = await sidra(`/t/3939/n6/${MUNICIPIO.codigo}/v/105/p/last%201/c79/all`);
+  const historico = await sidra(`/t/5457/n6/${MUNICIPIO.codigo}/v/216/p/all/c782/all`);
+  const censo = await coletarCensoAgro();
+
+  const VAR = {
+    8331: 'areaPlantadaHa',
+    216: 'areaColhidaHa',
+    214: 'quantidadeToneladas',
+    215: 'valorMilReais',
+  };
   const mapa = new Map();
   for (const linha of lavouras) {
     if (linha.D4C === '0') continue; // linha "Total"
@@ -307,13 +366,45 @@ async function coletarAgro() {
     .map((p) => ({ ...p, produto: p.produto.replace(/\s+Total$/i, '') }))
     .sort((a, b) => (b.valorMilReais ?? 0) - (a.valorMilReais ?? 0));
 
+  const ano = Number(lavouras[0]?.D3N) || null;
+
+  // Série de área colhida por produto, para medir há quanto tempo cada uma parou.
+  const serie = {};
+  for (const linha of historico) {
+    if (linha.D4C === '0') continue;
+    const nome = linha.D4N.replace(/\*+$/, '').replace(/\s+Total$/i, '').trim();
+    serie[nome] = serie[nome] ?? {};
+    serie[nome][linha.D3N] = num(linha.V);
+  }
+
+  const enriquecidos = produtos.map((p) => {
+    const parado = ano ? anosParados(serie[p.produto] ?? {}, ano) : null;
+    const equivalentes = EQUIVALENCIA_CENSO[p.produto] ?? [];
+    const linhasCenso = censo.filter((c) => equivalentes.includes(c.produto));
+    return {
+      ...p,
+      anosParados: parado?.anos ?? null,
+      paradoDesde: parado && parado.anos >= LIMITE_ANOS_PARADOS ? parado.desde : null,
+      censo2017:
+        linhasCenso.length > 0
+          ? {
+              areaColhidaHa: linhasCenso.reduce((s, c) => s + (c.areaColhidaHa ?? 0), 0),
+              produtos: linhasCenso.map((c) => c.produto),
+            }
+          : null,
+    };
+  });
+
   return {
-    fonte: [FONTES.ibgePam, FONTES.ibgePpm],
-    ano: Number(lavouras[0]?.D3N) || null,
+    fonte: [FONTES.ibgePam, FONTES.ibgePpm, FONTES.censoAgro],
+    ano,
     anoRebanho: Number(rebanhos[0]?.D3N) || null,
-    produtos,
+    produtos: enriquecidos,
+    censo2017: { ano: 2017, produtos: censo },
+    limiteAnosParados: LIMITE_ANOS_PARADOS,
     valorTotalMilReais: produtos.reduce((s, p) => s + (p.valorMilReais ?? 0), 0),
     areaTotalHa: produtos.reduce((s, p) => s + (p.areaColhidaHa ?? 0), 0),
+    areaPlantadaTotalHa: produtos.reduce((s, p) => s + (p.areaPlantadaHa ?? 0), 0),
     rebanhos: semDuplaContagem(
       rebanhos.map((l) => ({ tipo: l.D4N, cabecas: num(l.V) })).filter((r) => r.cabecas),
       (r) => r.tipo,

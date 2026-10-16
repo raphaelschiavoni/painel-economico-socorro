@@ -7,7 +7,7 @@
     "regiaoImediata": "Bragança Paulista",
     "circuito": "Circuito das Águas Paulista"
   },
-  "atualizadoEm": "2026-10-16T22:44:11.417Z",
+  "atualizadoEm": "2026-10-16T23:01:28.449Z",
   "comparativo": [
     {
       "codigo": "3552106",
@@ -99,6 +99,20 @@
       "orgao": "Tesouro Nacional / SICONFI",
       "tabela": "DCA Anexos I-C e I-E",
       "url": "https://siconfi.tesouro.gov.br/siconfi/pages/public/consulta_finbra/finbra_list.jsf"
+    },
+    {
+      "id": "ibge-censo-agro",
+      "titulo": "Censo Agropecuário 2017",
+      "orgao": "IBGE",
+      "tabela": "SIDRA 6957 e 6966",
+      "url": "https://sidra.ibge.gov.br/pesquisa/censo-agropecuario/censo-agropecuario-2017"
+    },
+    {
+      "id": "levantamento-municipal",
+      "titulo": "Levantamento da Secretaria de Desenvolvimento Econômico",
+      "orgao": "Prefeitura de Socorro",
+      "tabela": "src/data/municipal.json",
+      "url": "#fontes"
     },
     {
       "id": "ibge-malhas",

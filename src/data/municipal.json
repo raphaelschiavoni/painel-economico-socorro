@@ -1,0 +1,23 @@
+{
+  "_leia_me": [
+    "Levantamento próprio da Secretaria de Desenvolvimento Econômico de Socorro.",
+    "Serve para registrar o número que o município apurou em campo quando ele diverge",
+    "da estimativa do IBGE. O painel NUNCA substitui o dado oficial por este: mostra",
+    "os dois lado a lado, cada um com a sua fonte, para quem lê decidir em que confiar.",
+    "",
+    "Para incluir uma cultura, acrescente um objeto na lista 'lavouras' abaixo. O campo",
+    "'produto' precisa ser escrito exatamente como aparece na tabela do painel, por",
+    "exemplo 'Café (em grão)' ou 'Cana-de-açúcar'. Os campos numéricos que você não",
+    "tiver podem ficar como null.",
+    "",
+    "Exemplo de preenchimento:",
+    "{ \"produto\": \"Café (em grão)\", \"areaColhidaHa\": 1950, \"quantidadeToneladas\": null,",
+    "  \"fonte\": \"Casa da Agricultura de Socorro\", \"apuradoEm\": \"2026-10\",",
+    "  \"observacao\": \"Levantamento com os produtores do Circuito do Café\" }",
+    "",
+    "Depois de editar, rode: npm run build (ou faça commit e push, que o deploy refaz)."
+  ],
+  "responsavel": "",
+  "atualizadoEm": null,
+  "lavouras": []
+}
