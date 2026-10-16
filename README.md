@@ -61,6 +61,18 @@ bucket de arquivos. Não há banco de dados nem servidor de aplicação.
 
 O botão **Imprimir / PDF** no topo gera um PDF em A4 com quebras de página por
 seção, sem os controles de navegação e filtros. É o formato para levar a reunião.
+O relatório impresso sai sempre em tema claro, mesmo para quem está com o painel
+no escuro.
+
+Para gerar os arquivos sem abrir o navegador:
+
+```bash
+npm run exportar
+```
+
+Produz em `exports/` o PDF em A4 (23 páginas) e um print da página inteira em
+PNG. Usa o Chrome já instalado na máquina; se ele estiver em caminho incomum,
+aponte `CHROME_PATH` para o executável.
 
 ## Estrutura
 
