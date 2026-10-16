@@ -1,0 +1,146 @@
+{
+  "fonte": [
+    {
+      "id": "ibge-5457",
+      "titulo": "Produção Agrícola Municipal",
+      "orgao": "IBGE",
+      "tabela": "SIDRA 5457",
+      "url": "https://sidra.ibge.gov.br/tabela/5457"
+    },
+    {
+      "id": "ibge-3939",
+      "titulo": "Pesquisa da Pecuária Municipal",
+      "orgao": "IBGE",
+      "tabela": "SIDRA 3939",
+      "url": "https://sidra.ibge.gov.br/tabela/3939"
+    }
+  ],
+  "ano": 2024,
+  "anoRebanho": 2024,
+  "produtos": [
+    {
+      "produto": "Café (em grão)",
+      "areaColhidaHa": 2700,
+      "quantidadeToneladas": 4050,
+      "valorMilReais": 80190
+    },
+    {
+      "produto": "Laranja",
+      "areaColhidaHa": 250,
+      "quantidadeToneladas": 7000,
+      "valorMilReais": 17850
+    },
+    {
+      "produto": "Batata-inglesa",
+      "areaColhidaHa": 210,
+      "quantidadeToneladas": 4796,
+      "valorMilReais": 17797
+    },
+    {
+      "produto": "Abacate",
+      "areaColhidaHa": 130,
+      "quantidadeToneladas": 3086,
+      "valorMilReais": 10823
+    },
+    {
+      "produto": "Milho (em grão)",
+      "areaColhidaHa": 1800,
+      "quantidadeToneladas": 10200,
+      "valorMilReais": 9030
+    },
+    {
+      "produto": "Soja (em grão)",
+      "areaColhidaHa": 1300,
+      "quantidadeToneladas": 5200,
+      "valorMilReais": 8840
+    },
+    {
+      "produto": "Banana (cacho)",
+      "areaColhidaHa": 80,
+      "quantidadeToneladas": 1626,
+      "valorMilReais": 5587
+    },
+    {
+      "produto": "Cana-de-açúcar",
+      "areaColhidaHa": 300,
+      "quantidadeToneladas": 24000,
+      "valorMilReais": 4800
+    },
+    {
+      "produto": "Tomate",
+      "areaColhidaHa": 25,
+      "quantidadeToneladas": 1250,
+      "valorMilReais": 4175
+    },
+    {
+      "produto": "Feijão (em grão)",
+      "areaColhidaHa": 300,
+      "quantidadeToneladas": 525,
+      "valorMilReais": 2978
+    },
+    {
+      "produto": "Tangerina",
+      "areaColhidaHa": 40,
+      "quantidadeToneladas": 680,
+      "valorMilReais": 1411
+    },
+    {
+      "produto": "Uva",
+      "areaColhidaHa": 5,
+      "quantidadeToneladas": 60,
+      "valorMilReais": 540
+    },
+    {
+      "produto": "Batata-doce",
+      "areaColhidaHa": 10,
+      "quantidadeToneladas": 200,
+      "valorMilReais": 469
+    },
+    {
+      "produto": "Mandioca",
+      "areaColhidaHa": 20,
+      "quantidadeToneladas": 400,
+      "valorMilReais": 439
+    },
+    {
+      "produto": "Limão",
+      "areaColhidaHa": 5,
+      "quantidadeToneladas": 100,
+      "valorMilReais": 150
+    },
+    {
+      "produto": "Arroz (em casca)",
+      "areaColhidaHa": 3,
+      "quantidadeToneladas": 7,
+      "valorMilReais": 14
+    }
+  ],
+  "valorTotalMilReais": 165093,
+  "areaTotalHa": 7178,
+  "rebanhos": [
+    {
+      "tipo": "Galináceos",
+      "cabecas": 1100000
+    },
+    {
+      "tipo": "Bovino",
+      "cabecas": 45500
+    },
+    {
+      "tipo": "Suíno",
+      "cabecas": 6500
+    },
+    {
+      "tipo": "Ovino",
+      "cabecas": 3400
+    },
+    {
+      "tipo": "Equino",
+      "cabecas": 1150
+    },
+    {
+      "tipo": "Bubalino",
+      "cabecas": 180
+    }
+  ]
+}

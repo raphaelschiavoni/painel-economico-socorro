@@ -1,0 +1,231 @@
+@import 'tailwindcss';
+
+/*
+  Tokens do painel. A paleta categórica é a paleta validada de data-viz
+  (ordem fixa: azul, laranja, água, amarelo, magenta, verde, violeta, vermelho).
+  A ordem dos slots é o mecanismo de segurança para daltonismo — não é estética.
+  Cores nunca são recicladas por posição em ranking: cada entidade tem a sua.
+*/
+@theme {
+  --font-sans: system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+:root {
+  color-scheme: light;
+
+  /* superfícies e tinta */
+  --plano: #f9f9f7;
+  --superficie: #fcfcfb;
+  --superficie-2: #f2f1ed;
+  --tinta: #0b0b0b;
+  --tinta-2: #52514e;
+  --tinta-3: #898781;
+  --grade: #e1e0d9;
+  --eixo: #c3c2b7;
+  --borda: rgba(11, 11, 11, 0.1);
+
+  /* série categórica */
+  --serie-1: #2a78d6;
+  --serie-2: #eb6834;
+  --serie-3: #1baf7a;
+  --serie-4: #eda100;
+  --serie-5: #e87ba4;
+  --serie-6: #008300;
+  --serie-7: #4a3aa7;
+  --serie-8: #e34948;
+  --serie-neutra: #c3c2b7;
+
+  /* rampa sequencial de um só matiz (magnitude contínua: mapa) */
+  --seq-100: #cde2fb;
+  --seq-250: #86b6ef;
+  --seq-400: #3987e5;
+  --seq-550: #1c5cab;
+  --seq-700: #0d366b;
+
+  /* estados — nunca usados como cor de série */
+  --bom: #0ca30c;
+  --bom-texto: #006300;
+  --atencao: #fab219;
+  --critico: #d03b3b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-tema='claro']) {
+    color-scheme: dark;
+
+    --plano: #0d0d0d;
+    --superficie: #1a1a19;
+    --superficie-2: #232322;
+    --tinta: #ffffff;
+    --tinta-2: #c3c2b7;
+    --tinta-3: #898781;
+    --grade: #2c2c2a;
+    --eixo: #383835;
+    --borda: rgba(255, 255, 255, 0.1);
+
+    --serie-1: #3987e5;
+    --serie-2: #d95926;
+    --serie-3: #199e70;
+    --serie-4: #c98500;
+    --serie-5: #d55181;
+    --serie-6: #008300;
+    --serie-7: #9085e9;
+    --serie-8: #e66767;
+    --serie-neutra: #52514e;
+
+    --seq-100: #184f95;
+    --seq-250: #1c5cab;
+    --seq-400: #2a78d6;
+    --seq-550: #5598e7;
+    --seq-700: #9ec5f4;
+
+    --bom-texto: #0ca30c;
+  }
+}
+
+:root[data-tema='escuro'] {
+  color-scheme: dark;
+
+  --plano: #0d0d0d;
+  --superficie: #1a1a19;
+  --superficie-2: #232322;
+  --tinta: #ffffff;
+  --tinta-2: #c3c2b7;
+  --tinta-3: #898781;
+  --grade: #2c2c2a;
+  --eixo: #383835;
+  --borda: rgba(255, 255, 255, 0.1);
+
+  --serie-1: #3987e5;
+  --serie-2: #d95926;
+  --serie-3: #199e70;
+  --serie-4: #c98500;
+  --serie-5: #d55181;
+  --serie-6: #008300;
+  --serie-7: #9085e9;
+  --serie-8: #e66767;
+  --serie-neutra: #52514e;
+
+  --seq-100: #184f95;
+  --seq-250: #1c5cab;
+  --seq-400: #2a78d6;
+  --seq-550: #5598e7;
+  --seq-700: #9ec5f4;
+
+  --bom-texto: #0ca30c;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  background: var(--plano);
+  color: var(--tinta);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Números que se alinham em coluna ganham dígitos de largura fixa.
+   Números-herói ficam com as figuras proporcionais do próprio tipo. */
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.cartao {
+  background: var(--superficie);
+  border: 1px solid var(--borda);
+  border-radius: 0.75rem;
+}
+
+.foco-visivel:focus-visible {
+  outline: 2px solid var(--serie-1);
+  outline-offset: 2px;
+}
+
+/* Impressão: o painel precisa virar PDF de relatório sem retrabalho. */
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm 12mm;
+  }
+
+  /*
+    O papel é sempre branco. Sem redeclarar os tokens aqui, quem estiver no tema
+    escuro (por escolha ou por herdar o sistema) imprime texto branco sobre
+    fundo branco — a folha sai em branco.
+  */
+  /* O :root é repetido de propósito: o bloco do tema escuro usa
+     :root:not([data-tema='claro']), e especificidade vence ordem no CSS. */
+  :root:root,
+  :root:root[data-tema='escuro'],
+  :root:root[data-tema='claro'] {
+    color-scheme: light;
+
+    --plano: #ffffff;
+    --superficie: #ffffff;
+    --superficie-2: #f2f1ed;
+    --tinta: #0b0b0b;
+    --tinta-2: #52514e;
+    --tinta-3: #6b6a66;
+    --grade: #e1e0d9;
+    --eixo: #c3c2b7;
+    --borda: rgba(11, 11, 11, 0.18);
+
+    --serie-1: #2a78d6;
+    --serie-2: #eb6834;
+    --serie-3: #1baf7a;
+    --serie-4: #eda100;
+    --serie-5: #e87ba4;
+    --serie-6: #008300;
+    --serie-7: #4a3aa7;
+    --serie-8: #e34948;
+    --serie-neutra: #c3c2b7;
+
+    --seq-100: #cde2fb;
+    --seq-250: #86b6ef;
+    --seq-400: #3987e5;
+    --seq-550: #1c5cab;
+    --seq-700: #0d366b;
+
+    --bom-texto: #006300;
+    --critico: #d03b3b;
+  }
+
+  body {
+    background: #ffffff;
+    color: #0b0b0b;
+  }
+
+  /* Sem isso o navegador descarta os preenchimentos de barras e áreas. */
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .sem-impressao {
+    display: none !important;
+  }
+
+  .quebra-antes {
+    break-before: page;
+  }
+
+  .cartao,
+  section {
+    break-inside: avoid;
+    box-shadow: none;
+  }
+
+  main {
+    max-width: none !important;
+    padding: 0 !important;
+  }
+}

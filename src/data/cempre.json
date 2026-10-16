@@ -1,0 +1,734 @@
+{
+  "fonte": [
+    {
+      "id": "ibge-9418",
+      "titulo": "Cadastro Central de Empresas (CEMPRE)",
+      "orgao": "IBGE",
+      "tabela": "SIDRA 9418",
+      "url": "https://sidra.ibge.gov.br/tabela/9418"
+    }
+  ],
+  "anos": [
+    2022,
+    2023,
+    2024
+  ],
+  "ultimoAno": 2024,
+  "porAno": [
+    {
+      "ano": 2022,
+      "total": {
+        "empresas": 6159,
+        "pessoalOcupado": 15221,
+        "pessoalAssalariado": 8281,
+        "salariosMilReais": 253890
+      },
+      "setores": [
+        {
+          "letra": "A",
+          "nome": "Agropecuária",
+          "completo": "Agricultura, pecuária, produção florestal, pesca e aquicultura",
+          "macrossetor": "Agropecuária",
+          "empresas": 4070,
+          "pessoalOcupado": 4117,
+          "pessoalAssalariado": 35,
+          "salariosMilReais": 701
+        },
+        {
+          "letra": "B",
+          "nome": "Indústrias extrativas",
+          "completo": "Indústrias extrativas",
+          "macrossetor": "Indústria",
+          "empresas": 8,
+          "pessoalOcupado": null,
+          "pessoalAssalariado": null,
+          "salariosMilReais": null
+        },
+        {
+          "letra": "C",
+          "nome": "Indústria de transformação",
+          "completo": "Indústrias de transformação",
+          "macrossetor": "Indústria",
+          "empresas": 275,
+          "pessoalOcupado": 2174,
+          "pessoalAssalariado": 1808,
+          "salariosMilReais": 53077
+        },
+        {
+          "letra": "D",
+          "nome": "Eletricidade e gás",
+          "completo": "Eletricidade e gás",
+          "macrossetor": "Indústria",
+          "empresas": null,
+          "pessoalOcupado": null,
+          "pessoalAssalariado": null,
+          "salariosMilReais": null
+        },
+        {
+          "letra": "E",
+          "nome": "Água e saneamento",
+          "completo": "Água, esgoto e gestão de resíduos",
+          "macrossetor": "Indústria",
+          "empresas": 1,
+          "pessoalOcupado": null,
+          "pessoalAssalariado": null,
+          "salariosMilReais": null
+        },
+        {
+          "letra": "F",
+          "nome": "Construção",
+          "completo": "Construção",
+          "macrossetor": "Construção",
+          "empresas": 71,
+          "pessoalOcupado": 317,
+          "pessoalAssalariado": 198,
+          "salariosMilReais": 5045
+        },
+        {
+          "letra": "G",
+          "nome": "Comércio",
+          "completo": "Comércio; reparação de veículos",
+          "macrossetor": "Comércio",
+          "empresas": 748,
+          "pessoalOcupado": 3601,
+          "pessoalAssalariado": 2593,
+          "salariosMilReais": 78949
+        },
+        {
+          "letra": "H",
+          "nome": "Transporte e logística",
+          "completo": "Transporte, armazenagem e correio",
+          "macrossetor": "Serviços",
+          "empresas": 79,
+          "pessoalOcupado": 341,
+          "pessoalAssalariado": 246,
+          "salariosMilReais": 5653
+        },
+        {
+          "letra": "I",
+          "nome": "Alojamento e alimentação",
+          "completo": "Alojamento e alimentação",
+          "macrossetor": "Turismo e alimentação",
+          "empresas": 154,
+          "pessoalOcupado": 825,
+          "pessoalAssalariado": 628,
+          "salariosMilReais": 17176
+        },
+        {
+          "letra": "J",
+          "nome": "Informação e comunicação",
+          "completo": "Informação e comunicação",
+          "macrossetor": "Serviços",
+          "empresas": 41,
+          "pessoalOcupado": 242,
+          "pessoalAssalariado": 178,
+          "salariosMilReais": 6529
+        },
+        {
+          "letra": "K",
+          "nome": "Serviços financeiros",
+          "completo": "Atividades financeiras e de seguros",
+          "macrossetor": "Serviços",
+          "empresas": 52,
+          "pessoalOcupado": 127,
+          "pessoalAssalariado": 30,
+          "salariosMilReais": 802
+        },
+        {
+          "letra": "L",
+          "nome": "Atividades imobiliárias",
+          "completo": "Atividades imobiliárias",
+          "macrossetor": "Serviços",
+          "empresas": 56,
+          "pessoalOcupado": 136,
+          "pessoalAssalariado": 30,
+          "salariosMilReais": 803
+        },
+        {
+          "letra": "M",
+          "nome": "Serviços profissionais",
+          "completo": "Atividades profissionais, científicas e técnicas",
+          "macrossetor": "Serviços",
+          "empresas": 126,
+          "pessoalOcupado": 332,
+          "pessoalAssalariado": 163,
+          "salariosMilReais": 5164
+        },
+        {
+          "letra": "N",
+          "nome": "Serviços administrativos",
+          "completo": "Atividades administrativas e serviços complementares",
+          "macrossetor": "Serviços",
+          "empresas": 139,
+          "pessoalOcupado": 467,
+          "pessoalAssalariado": 297,
+          "salariosMilReais": 7011
+        },
+        {
+          "letra": "O",
+          "nome": "Administração pública",
+          "completo": "Administração pública, defesa e seguridade social",
+          "macrossetor": "Setor público",
+          "empresas": 8,
+          "pessoalOcupado": 1149,
+          "pessoalAssalariado": 1149,
+          "salariosMilReais": 48072
+        },
+        {
+          "letra": "P",
+          "nome": "Educação",
+          "completo": "Educação",
+          "macrossetor": "Serviços",
+          "empresas": 68,
+          "pessoalOcupado": 434,
+          "pessoalAssalariado": 363,
+          "salariosMilReais": 8190
+        },
+        {
+          "letra": "Q",
+          "nome": "Saúde e serviços sociais",
+          "completo": "Saúde humana e serviços sociais",
+          "macrossetor": "Serviços",
+          "empresas": 106,
+          "pessoalOcupado": 500,
+          "pessoalAssalariado": 325,
+          "salariosMilReais": 10374
+        },
+        {
+          "letra": "R",
+          "nome": "Artes, cultura e esporte",
+          "completo": "Artes, cultura, esporte e recreação",
+          "macrossetor": "Turismo e alimentação",
+          "empresas": 35,
+          "pessoalOcupado": 127,
+          "pessoalAssalariado": 77,
+          "salariosMilReais": 1909
+        },
+        {
+          "letra": "S",
+          "nome": "Outros serviços",
+          "completo": "Outras atividades de serviços",
+          "macrossetor": "Serviços",
+          "empresas": 122,
+          "pessoalOcupado": 315,
+          "pessoalAssalariado": 156,
+          "salariosMilReais": 4318
+        },
+        {
+          "letra": "T",
+          "nome": "Serviços domésticos",
+          "completo": "Serviços domésticos",
+          "macrossetor": "Serviços",
+          "empresas": null,
+          "pessoalOcupado": null,
+          "pessoalAssalariado": null,
+          "salariosMilReais": null
+        }
+      ]
+    },
+    {
+      "ano": 2023,
+      "total": {
+        "empresas": 6296,
+        "pessoalOcupado": 15948,
+        "pessoalAssalariado": 8809,
+        "salariosMilReais": 304421
+      },
+      "setores": [
+        {
+          "letra": "A",
+          "nome": "Agropecuária",
+          "completo": "Agricultura, pecuária, produção florestal, pesca e aquicultura",
+          "macrossetor": "Agropecuária",
+          "empresas": 4143,
+          "pessoalOcupado": 4184,
+          "pessoalAssalariado": 30,
+          "salariosMilReais": 668
+        },
+        {
+          "letra": "B",
+          "nome": "Indústrias extrativas",
+          "completo": "Indústrias extrativas",
+          "macrossetor": "Indústria",
+          "empresas": 8,
+          "pessoalOcupado": null,
+          "pessoalAssalariado": null,
+          "salariosMilReais": null
+        },
+        {
+          "letra": "C",
+          "nome": "Indústria de transformação",
+          "completo": "Indústrias de transformação",
+          "macrossetor": "Indústria",
+          "empresas": 268,
+          "pessoalOcupado": 2098,
+          "pessoalAssalariado": 1744,
+          "salariosMilReais": 61637
+        },
+        {
+          "letra": "D",
+          "nome": "Eletricidade e gás",
+          "completo": "Eletricidade e gás",
+          "macrossetor": "Indústria",
+          "empresas": null,
+          "pessoalOcupado": null,
+          "pessoalAssalariado": null,
+          "salariosMilReais": null
+        },
+        {
+          "letra": "E",
+          "nome": "Água e saneamento",
+          "completo": "Água, esgoto e gestão de resíduos",
+          "macrossetor": "Indústria",
+          "empresas": 1,
+          "pessoalOcupado": null,
+          "pessoalAssalariado": null,
+          "salariosMilReais": null
+        },
+        {
+          "letra": "F",
+          "nome": "Construção",
+          "completo": "Construção",
+          "macrossetor": "Construção",
+          "empresas": 76,
+          "pessoalOcupado": 283,
+          "pessoalAssalariado": 156,
+          "salariosMilReais": 6407
+        },
+        {
+          "letra": "G",
+          "nome": "Comércio",
+          "completo": "Comércio; reparação de veículos",
+          "macrossetor": "Comércio",
+          "empresas": 768,
+          "pessoalOcupado": 4080,
+          "pessoalAssalariado": 3034,
+          "salariosMilReais": 99697
+        },
+        {
+          "letra": "H",
+          "nome": "Transporte e logística",
+          "completo": "Transporte, armazenagem e correio",
+          "macrossetor": "Serviços",
+          "empresas": 81,
+          "pessoalOcupado": 279,
+          "pessoalAssalariado": 174,
+          "salariosMilReais": 5992
+        },
+        {
+          "letra": "I",
+          "nome": "Alojamento e alimentação",
+          "completo": "Alojamento e alimentação",
+          "macrossetor": "Turismo e alimentação",
+          "empresas": 160,
+          "pessoalOcupado": 912,
+          "pessoalAssalariado": 703,
+          "salariosMilReais": 18117
+        },
+        {
+          "letra": "J",
+          "nome": "Informação e comunicação",
+          "completo": "Informação e comunicação",
+          "macrossetor": "Serviços",
+          "empresas": 40,
+          "pessoalOcupado": 216,
+          "pessoalAssalariado": 160,
+          "salariosMilReais": 8639
+        },
+        {
+          "letra": "K",
+          "nome": "Serviços financeiros",
+          "completo": "Atividades financeiras e de seguros",
+          "macrossetor": "Serviços",
+          "empresas": 57,
+          "pessoalOcupado": 143,
+          "pessoalAssalariado": 28,
+          "salariosMilReais": 855
+        },
+        {
+          "letra": "L",
+          "nome": "Atividades imobiliárias",
+          "completo": "Atividades imobiliárias",
+          "macrossetor": "Serviços",
+          "empresas": 55,
+          "pessoalOcupado": 138,
+          "pessoalAssalariado": 30,
+          "salariosMilReais": 947
+        },
+        {
+          "letra": "M",
+          "nome": "Serviços profissionais",
+          "completo": "Atividades profissionais, científicas e técnicas",
+          "macrossetor": "Serviços",
+          "empresas": 128,
+          "pessoalOcupado": 328,
+          "pessoalAssalariado": 154,
+          "salariosMilReais": 6117
+        },
+        {
+          "letra": "N",
+          "nome": "Serviços administrativos",
+          "completo": "Atividades administrativas e serviços complementares",
+          "macrossetor": "Serviços",
+          "empresas": 148,
+          "pessoalOcupado": 542,
+          "pessoalAssalariado": 365,
+          "salariosMilReais": 9674
+        },
+        {
+          "letra": "O",
+          "nome": "Administração pública",
+          "completo": "Administração pública, defesa e seguridade social",
+          "macrossetor": "Setor público",
+          "empresas": 9,
+          "pessoalOcupado": 1267,
+          "pessoalAssalariado": 1266,
+          "salariosMilReais": 56495
+        },
+        {
+          "letra": "P",
+          "nome": "Educação",
+          "completo": "Educação",
+          "macrossetor": "Serviços",
+          "empresas": 75,
+          "pessoalOcupado": 440,
+          "pessoalAssalariado": 363,
+          "salariosMilReais": 8868
+        },
+        {
+          "letra": "Q",
+          "nome": "Saúde e serviços sociais",
+          "completo": "Saúde humana e serviços sociais",
+          "macrossetor": "Serviços",
+          "empresas": 119,
+          "pessoalOcupado": 548,
+          "pessoalAssalariado": 345,
+          "salariosMilReais": 12909
+        },
+        {
+          "letra": "R",
+          "nome": "Artes, cultura e esporte",
+          "completo": "Artes, cultura, esporte e recreação",
+          "macrossetor": "Turismo e alimentação",
+          "empresas": 39,
+          "pessoalOcupado": 138,
+          "pessoalAssalariado": 85,
+          "salariosMilReais": 2166
+        },
+        {
+          "letra": "S",
+          "nome": "Outros serviços",
+          "completo": "Outras atividades de serviços",
+          "macrossetor": "Serviços",
+          "empresas": 121,
+          "pessoalOcupado": 333,
+          "pessoalAssalariado": 165,
+          "salariosMilReais": 5045
+        },
+        {
+          "letra": "T",
+          "nome": "Serviços domésticos",
+          "completo": "Serviços domésticos",
+          "macrossetor": "Serviços",
+          "empresas": null,
+          "pessoalOcupado": null,
+          "pessoalAssalariado": null,
+          "salariosMilReais": null
+        }
+      ]
+    },
+    {
+      "ano": 2024,
+      "total": {
+        "empresas": 6439,
+        "pessoalOcupado": 16118,
+        "pessoalAssalariado": 8847,
+        "salariosMilReais": 311985
+      },
+      "setores": [
+        {
+          "letra": "A",
+          "nome": "Agropecuária",
+          "completo": "Agricultura, pecuária, produção florestal, pesca e aquicultura",
+          "macrossetor": "Agropecuária",
+          "empresas": 4214,
+          "pessoalOcupado": 4262,
+          "pessoalAssalariado": 33,
+          "salariosMilReais": 747
+        },
+        {
+          "letra": "B",
+          "nome": "Indústrias extrativas",
+          "completo": "Indústrias extrativas",
+          "macrossetor": "Indústria",
+          "empresas": 10,
+          "pessoalOcupado": null,
+          "pessoalAssalariado": null,
+          "salariosMilReais": null
+        },
+        {
+          "letra": "C",
+          "nome": "Indústria de transformação",
+          "completo": "Indústrias de transformação",
+          "macrossetor": "Indústria",
+          "empresas": 256,
+          "pessoalOcupado": 2068,
+          "pessoalAssalariado": 1740,
+          "salariosMilReais": 60284
+        },
+        {
+          "letra": "D",
+          "nome": "Eletricidade e gás",
+          "completo": "Eletricidade e gás",
+          "macrossetor": "Indústria",
+          "empresas": null,
+          "pessoalOcupado": null,
+          "pessoalAssalariado": null,
+          "salariosMilReais": null
+        },
+        {
+          "letra": "E",
+          "nome": "Água e saneamento",
+          "completo": "Água, esgoto e gestão de resíduos",
+          "macrossetor": "Indústria",
+          "empresas": 1,
+          "pessoalOcupado": null,
+          "pessoalAssalariado": null,
+          "salariosMilReais": null
+        },
+        {
+          "letra": "F",
+          "nome": "Construção",
+          "completo": "Construção",
+          "macrossetor": "Construção",
+          "empresas": 85,
+          "pessoalOcupado": 278,
+          "pessoalAssalariado": 148,
+          "salariosMilReais": 5436
+        },
+        {
+          "letra": "G",
+          "nome": "Comércio",
+          "completo": "Comércio; reparação de veículos",
+          "macrossetor": "Comércio",
+          "empresas": 788,
+          "pessoalOcupado": 4034,
+          "pessoalAssalariado": 2966,
+          "salariosMilReais": 101477
+        },
+        {
+          "letra": "H",
+          "nome": "Transporte e logística",
+          "completo": "Transporte, armazenagem e correio",
+          "macrossetor": "Serviços",
+          "empresas": 75,
+          "pessoalOcupado": 186,
+          "pessoalAssalariado": 95,
+          "salariosMilReais": 2945
+        },
+        {
+          "letra": "I",
+          "nome": "Alojamento e alimentação",
+          "completo": "Alojamento e alimentação",
+          "macrossetor": "Turismo e alimentação",
+          "empresas": 163,
+          "pessoalOcupado": 932,
+          "pessoalAssalariado": 727,
+          "salariosMilReais": 20041
+        },
+        {
+          "letra": "J",
+          "nome": "Informação e comunicação",
+          "completo": "Informação e comunicação",
+          "macrossetor": "Serviços",
+          "empresas": 43,
+          "pessoalOcupado": 215,
+          "pessoalAssalariado": 159,
+          "salariosMilReais": 7230
+        },
+        {
+          "letra": "K",
+          "nome": "Serviços financeiros",
+          "completo": "Atividades financeiras e de seguros",
+          "macrossetor": "Serviços",
+          "empresas": 74,
+          "pessoalOcupado": 194,
+          "pessoalAssalariado": 31,
+          "salariosMilReais": 1004
+        },
+        {
+          "letra": "L",
+          "nome": "Atividades imobiliárias",
+          "completo": "Atividades imobiliárias",
+          "macrossetor": "Serviços",
+          "empresas": 59,
+          "pessoalOcupado": 154,
+          "pessoalAssalariado": 34,
+          "salariosMilReais": 1029
+        },
+        {
+          "letra": "M",
+          "nome": "Serviços profissionais",
+          "completo": "Atividades profissionais, científicas e técnicas",
+          "macrossetor": "Serviços",
+          "empresas": 146,
+          "pessoalOcupado": 382,
+          "pessoalAssalariado": 181,
+          "salariosMilReais": 7200
+        },
+        {
+          "letra": "N",
+          "nome": "Serviços administrativos",
+          "completo": "Atividades administrativas e serviços complementares",
+          "macrossetor": "Serviços",
+          "empresas": 161,
+          "pessoalOcupado": 616,
+          "pessoalAssalariado": 435,
+          "salariosMilReais": 12694
+        },
+        {
+          "letra": "O",
+          "nome": "Administração pública",
+          "completo": "Administração pública, defesa e seguridade social",
+          "macrossetor": "Setor público",
+          "empresas": 9,
+          "pessoalOcupado": 1258,
+          "pessoalAssalariado": 1257,
+          "salariosMilReais": 59307
+        },
+        {
+          "letra": "P",
+          "nome": "Educação",
+          "completo": "Educação",
+          "macrossetor": "Serviços",
+          "empresas": 45,
+          "pessoalOcupado": 450,
+          "pessoalAssalariado": 384,
+          "salariosMilReais": 9777
+        },
+        {
+          "letra": "Q",
+          "nome": "Saúde e serviços sociais",
+          "completo": "Saúde humana e serviços sociais",
+          "macrossetor": "Serviços",
+          "empresas": 129,
+          "pessoalOcupado": 593,
+          "pessoalAssalariado": 388,
+          "salariosMilReais": 14758
+        },
+        {
+          "letra": "R",
+          "nome": "Artes, cultura e esporte",
+          "completo": "Artes, cultura, esporte e recreação",
+          "macrossetor": "Turismo e alimentação",
+          "empresas": 44,
+          "pessoalOcupado": 160,
+          "pessoalAssalariado": 102,
+          "salariosMilReais": 2580
+        },
+        {
+          "letra": "S",
+          "nome": "Outros serviços",
+          "completo": "Outras atividades de serviços",
+          "macrossetor": "Serviços",
+          "empresas": 137,
+          "pessoalOcupado": 312,
+          "pessoalAssalariado": 159,
+          "salariosMilReais": 5222
+        },
+        {
+          "letra": "T",
+          "nome": "Serviços domésticos",
+          "completo": "Serviços domésticos",
+          "macrossetor": "Serviços",
+          "empresas": null,
+          "pessoalOcupado": null,
+          "pessoalAssalariado": null,
+          "salariosMilReais": null
+        }
+      ]
+    }
+  ],
+  "comparativo": [
+    {
+      "codigo": "3552106",
+      "nome": "Socorro",
+      "ano": 2024,
+      "empresas": 6439,
+      "pessoalOcupado": 16118,
+      "salariosMilReais": 311985
+    },
+    {
+      "codigo": "3500501",
+      "nome": "Águas de Lindóia",
+      "ano": 2024,
+      "empresas": 1644,
+      "pessoalOcupado": 7460,
+      "salariosMilReais": 186713
+    },
+    {
+      "codigo": "3501905",
+      "nome": "Amparo",
+      "ano": 2024,
+      "empresas": 4620,
+      "pessoalOcupado": 30170,
+      "salariosMilReais": 1171366
+    },
+    {
+      "codigo": "3519055",
+      "nome": "Holambra",
+      "ano": 2024,
+      "empresas": 1988,
+      "pessoalOcupado": 12249,
+      "salariosMilReais": 414415
+    },
+    {
+      "codigo": "3522604",
+      "nome": "Itapira",
+      "ano": 2024,
+      "empresas": 4928,
+      "pessoalOcupado": 33890,
+      "salariosMilReais": 1634804
+    },
+    {
+      "codigo": "3524709",
+      "nome": "Jaguariúna",
+      "ano": 2024,
+      "empresas": 4221,
+      "pessoalOcupado": 46378,
+      "salariosMilReais": 2802768
+    },
+    {
+      "codigo": "3527009",
+      "nome": "Lindóia",
+      "ano": 2024,
+      "empresas": 575,
+      "pessoalOcupado": 2933,
+      "salariosMilReais": 94751
+    },
+    {
+      "codigo": "3531209",
+      "nome": "Monte Alegre do Sul",
+      "ano": 2024,
+      "empresas": 1156,
+      "pessoalOcupado": 2777,
+      "salariosMilReais": 49348
+    },
+    {
+      "codigo": "3537107",
+      "nome": "Pedreira",
+      "ano": 2024,
+      "empresas": 2692,
+      "pessoalOcupado": 17598,
+      "salariosMilReais": 551144
+    },
+    {
+      "codigo": "3551603",
+      "nome": "Serra Negra",
+      "ano": 2024,
+      "empresas": 2904,
+      "pessoalOcupado": 9508,
+      "salariosMilReais": 191819
+    }
+  ]
+}

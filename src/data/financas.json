@@ -1,0 +1,902 @@
+{
+  "fonte": [
+    {
+      "id": "siconfi-dca",
+      "titulo": "Declaração de Contas Anuais (DCA)",
+      "orgao": "Tesouro Nacional / SICONFI",
+      "tabela": "DCA Anexos I-C e I-E",
+      "url": "https://siconfi.tesouro.gov.br/siconfi/pages/public/consulta_finbra/finbra_list.jsf"
+    }
+  ],
+  "anos": [
+    {
+      "ano": 2019,
+      "populacao": 40648,
+      "receitaTotal": 122234920.34,
+      "receitaLiquida": 111924508.71000001,
+      "receitasCorrentes": 122184920.34,
+      "receitasCapital": 50000,
+      "despesaTotal": 115967609.06,
+      "despesaPaga": 111792067.55,
+      "receitasPorOrigem": [
+        {
+          "nome": "Transferências Correntes",
+          "valor": 77085193.15
+        },
+        {
+          "nome": "Impostos, Taxas e Contribuições de Melhoria",
+          "valor": 28513466.75
+        },
+        {
+          "nome": "Contribuições",
+          "valor": 16297720.77
+        },
+        {
+          "nome": "Receita Patrimonial",
+          "valor": 288539.67
+        },
+        {
+          "nome": "Transferências de Capital",
+          "valor": 50000
+        }
+      ],
+      "despesasPorFuncao": [
+        {
+          "nome": "Educação",
+          "valor": 35123583.18
+        },
+        {
+          "nome": "Saúde",
+          "valor": 34292173.6
+        },
+        {
+          "nome": "Urbanismo",
+          "valor": 13461138.18
+        },
+        {
+          "nome": "Administração",
+          "valor": 10389529.65
+        },
+        {
+          "nome": "Segurança Pública",
+          "valor": 4682397
+        },
+        {
+          "nome": "Assistência Social",
+          "valor": 3359762.09
+        },
+        {
+          "nome": "Transporte",
+          "valor": 3174007.43
+        },
+        {
+          "nome": "Comércio e Serviços",
+          "valor": 2905986.63
+        },
+        {
+          "nome": "Legislativa",
+          "valor": 2072733.04
+        },
+        {
+          "nome": "Cultura",
+          "valor": 2028183.36
+        },
+        {
+          "nome": "Encargos Especiais",
+          "valor": 1966385.33
+        },
+        {
+          "nome": "Gestão Ambiental",
+          "valor": 1089740.17
+        },
+        {
+          "nome": "Desporto e Lazer",
+          "valor": 604003.7
+        },
+        {
+          "nome": "Agricultura",
+          "valor": 422447.78
+        },
+        {
+          "nome": "Indústria",
+          "valor": 287683.48
+        },
+        {
+          "nome": "Habitação",
+          "valor": 107854.44
+        }
+      ],
+      "tributos": [
+        {
+          "chave": "iss",
+          "nome": "ISS",
+          "descricao": "Imposto sobre Serviços de Qualquer Natureza",
+          "proprio": true,
+          "valor": 5039376.78
+        },
+        {
+          "chave": "iptu",
+          "nome": "IPTU",
+          "descricao": "Imposto Predial e Territorial Urbano",
+          "proprio": true,
+          "valor": 17657122.76
+        },
+        {
+          "chave": "itbi",
+          "nome": "ITBI",
+          "descricao": "Transmissão de bens imóveis",
+          "proprio": true,
+          "valor": 2165924.26
+        },
+        {
+          "chave": "icms",
+          "nome": "Cota-parte do ICMS",
+          "descricao": "Repasse estadual proporcional ao valor adicionado do município",
+          "proprio": false,
+          "valor": 19622620.05
+        },
+        {
+          "chave": "fpm",
+          "nome": "FPM",
+          "descricao": "Fundo de Participação dos Municípios",
+          "proprio": false,
+          "valor": 27180357.28
+        },
+        {
+          "chave": "ipva",
+          "nome": "Cota-parte do IPVA",
+          "descricao": "Repasse estadual sobre veículos licenciados no município",
+          "proprio": false,
+          "valor": 6682331.51
+        }
+      ]
+    },
+    {
+      "ano": 2020,
+      "populacao": 41005,
+      "receitaTotal": 138877773.46,
+      "receitaLiquida": 128806539.84,
+      "receitasCorrentes": 133045362.63,
+      "receitasCapital": 5832410.83,
+      "despesaTotal": 132087573.57,
+      "despesaPaga": 125761756.28,
+      "receitasPorOrigem": [
+        {
+          "nome": "Transferências Correntes",
+          "valor": 95225991.81
+        },
+        {
+          "nome": "Impostos, Taxas e Contribuições de Melhoria",
+          "valor": 28699336.26
+        },
+        {
+          "nome": "Outras Receitas Correntes",
+          "valor": 7050915.55
+        },
+        {
+          "nome": "Transferências de Capital",
+          "valor": 5585410.83
+        },
+        {
+          "nome": "Contribuições",
+          "valor": 2006530.78
+        },
+        {
+          "nome": "Alienação de Bens",
+          "valor": 247000
+        },
+        {
+          "nome": "Receita Patrimonial",
+          "valor": 62588.23
+        }
+      ],
+      "despesasPorFuncao": [
+        {
+          "nome": "Saúde",
+          "valor": 40890513.55
+        },
+        {
+          "nome": "Educação",
+          "valor": 32524680.76
+        },
+        {
+          "nome": "Urbanismo",
+          "valor": 20001183.44
+        },
+        {
+          "nome": "Administração",
+          "valor": 10941896.52
+        },
+        {
+          "nome": "Comércio e Serviços",
+          "valor": 5110007.14
+        },
+        {
+          "nome": "Transporte",
+          "valor": 4934305.55
+        },
+        {
+          "nome": "Segurança Pública",
+          "valor": 4895155.4
+        },
+        {
+          "nome": "Assistência Social",
+          "valor": 3976525.01
+        },
+        {
+          "nome": "Cultura",
+          "valor": 2570627.87
+        },
+        {
+          "nome": "Legislativa",
+          "valor": 2238678.17
+        },
+        {
+          "nome": "Gestão Ambiental",
+          "valor": 1320514
+        },
+        {
+          "nome": "Encargos Especiais",
+          "valor": 1188440.16
+        },
+        {
+          "nome": "Desporto e Lazer",
+          "valor": 549806.9
+        },
+        {
+          "nome": "Agricultura",
+          "valor": 509343.89
+        },
+        {
+          "nome": "Indústria",
+          "valor": 279428.48
+        },
+        {
+          "nome": "Habitação",
+          "valor": 156466.73
+        }
+      ],
+      "tributos": [
+        {
+          "chave": "iss",
+          "nome": "ISS",
+          "descricao": "Imposto sobre Serviços de Qualquer Natureza",
+          "proprio": true,
+          "valor": 4727774.56
+        },
+        {
+          "chave": "iptu",
+          "nome": "IPTU",
+          "descricao": "Imposto Predial e Territorial Urbano",
+          "proprio": true,
+          "valor": 17812562
+        },
+        {
+          "chave": "itbi",
+          "nome": "ITBI",
+          "descricao": "Transmissão de bens imóveis",
+          "proprio": true,
+          "valor": 2546570.61
+        },
+        {
+          "chave": "icms",
+          "nome": "Cota-parte do ICMS",
+          "descricao": "Repasse estadual proporcional ao valor adicionado do município",
+          "proprio": false,
+          "valor": 19156537.2
+        },
+        {
+          "chave": "fpm",
+          "nome": "FPM",
+          "descricao": "Fundo de Participação dos Municípios",
+          "proprio": false,
+          "valor": 27881116.020000003
+        },
+        {
+          "chave": "ipva",
+          "nome": "Cota-parte do IPVA",
+          "descricao": "Repasse estadual sobre veículos licenciados no município",
+          "proprio": false,
+          "valor": 7139679.49
+        }
+      ]
+    },
+    {
+      "ano": 2021,
+      "populacao": 41352,
+      "receitaTotal": 153024509.89,
+      "receitaLiquida": 140051545.75,
+      "receitasCorrentes": 149131255.33,
+      "receitasCapital": 3893254.56,
+      "despesaTotal": 135629739.52,
+      "despesaPaga": 128788808.24,
+      "receitasPorOrigem": [
+        {
+          "nome": "Transferências Correntes",
+          "valor": 108364975.21
+        },
+        {
+          "nome": "Impostos, Taxas e Contribuições de Melhoria",
+          "valor": 35686860.77
+        },
+        {
+          "nome": "Transferências de Capital",
+          "valor": 3795904.56
+        },
+        {
+          "nome": "Contribuições",
+          "valor": 2397478.34
+        },
+        {
+          "nome": "Outras Receitas Correntes",
+          "valor": 2348451.05
+        },
+        {
+          "nome": "Receita Patrimonial",
+          "valor": 333489.96
+        },
+        {
+          "nome": "Alienação de Bens",
+          "valor": 97350
+        }
+      ],
+      "despesasPorFuncao": [
+        {
+          "nome": "Saúde",
+          "valor": 45285016.22
+        },
+        {
+          "nome": "Educação",
+          "valor": 37360193.29
+        },
+        {
+          "nome": "Urbanismo",
+          "valor": 14593881.98
+        },
+        {
+          "nome": "Administração",
+          "valor": 11754917.2
+        },
+        {
+          "nome": "Segurança Pública",
+          "valor": 5249929
+        },
+        {
+          "nome": "Transporte",
+          "valor": 5204967.2
+        },
+        {
+          "nome": "Assistência Social",
+          "valor": 4376857.95
+        },
+        {
+          "nome": "Encargos Especiais",
+          "valor": 2706665.66
+        },
+        {
+          "nome": "Cultura",
+          "valor": 2408296.86
+        },
+        {
+          "nome": "Legislativa",
+          "valor": 2136264.23
+        },
+        {
+          "nome": "Gestão Ambiental",
+          "valor": 1612054.96
+        },
+        {
+          "nome": "Comércio e Serviços",
+          "valor": 1415450.05
+        },
+        {
+          "nome": "Desporto e Lazer",
+          "valor": 600318.42
+        },
+        {
+          "nome": "Agricultura",
+          "valor": 445377.87
+        },
+        {
+          "nome": "Indústria",
+          "valor": 315401.43
+        },
+        {
+          "nome": "Habitação",
+          "valor": 164147.2
+        }
+      ],
+      "tributos": [
+        {
+          "chave": "iss",
+          "nome": "ISS",
+          "descricao": "Imposto sobre Serviços de Qualquer Natureza",
+          "proprio": true,
+          "valor": 6031749.84
+        },
+        {
+          "chave": "iptu",
+          "nome": "IPTU",
+          "descricao": "Imposto Predial e Territorial Urbano",
+          "proprio": true,
+          "valor": 21332818.87
+        },
+        {
+          "chave": "itbi",
+          "nome": "ITBI",
+          "descricao": "Transmissão de bens imóveis",
+          "proprio": true,
+          "valor": 4059061.68
+        },
+        {
+          "chave": "icms",
+          "nome": "Cota-parte do ICMS",
+          "descricao": "Repasse estadual proporcional ao valor adicionado do município",
+          "proprio": false,
+          "valor": 24988199.28
+        },
+        {
+          "chave": "fpm",
+          "nome": "FPM",
+          "descricao": "Fundo de Participação dos Municípios",
+          "proprio": false,
+          "valor": 34662984.699999996
+        },
+        {
+          "chave": "ipva",
+          "nome": "Cota-parte do IPVA",
+          "descricao": "Repasse estadual sobre veículos licenciados no município",
+          "proprio": false,
+          "valor": 7564021.56
+        }
+      ]
+    },
+    {
+      "ano": 2022,
+      "populacao": 41690,
+      "receitaTotal": 180245470,
+      "receitaLiquida": 164584390.14,
+      "receitasCorrentes": 176081517.23,
+      "receitasCapital": 4163952.77,
+      "despesaTotal": 164198131.13,
+      "despesaPaga": 152965572.64,
+      "receitasPorOrigem": [
+        {
+          "nome": "Transferências Correntes",
+          "valor": 129433296.96
+        },
+        {
+          "nome": "Impostos, Taxas e Contribuições de Melhoria",
+          "valor": 38738396.93
+        },
+        {
+          "nome": "Transferências de Capital",
+          "valor": 4163952.77
+        },
+        {
+          "nome": "Outras Receitas Correntes",
+          "valor": 2744085.58
+        },
+        {
+          "nome": "Contribuições",
+          "valor": 2672447.11
+        },
+        {
+          "nome": "Receita Patrimonial",
+          "valor": 2493290.65
+        }
+      ],
+      "despesasPorFuncao": [
+        {
+          "nome": "Saúde",
+          "valor": 51299251.96
+        },
+        {
+          "nome": "Educação",
+          "valor": 49526934.84
+        },
+        {
+          "nome": "Administração",
+          "valor": 15556535.79
+        },
+        {
+          "nome": "Urbanismo",
+          "valor": 15511805.71
+        },
+        {
+          "nome": "Transporte",
+          "valor": 5934155.76
+        },
+        {
+          "nome": "Segurança Pública",
+          "valor": 5924564.38
+        },
+        {
+          "nome": "Assistência Social",
+          "valor": 5156372.64
+        },
+        {
+          "nome": "Cultura",
+          "valor": 4145980.72
+        },
+        {
+          "nome": "Encargos Especiais",
+          "valor": 2828834.78
+        },
+        {
+          "nome": "Legislativa",
+          "valor": 2572162.04
+        },
+        {
+          "nome": "Comércio e Serviços",
+          "valor": 2142912.77
+        },
+        {
+          "nome": "Gestão Ambiental",
+          "valor": 1699235.46
+        },
+        {
+          "nome": "Desporto e Lazer",
+          "valor": 764046.78
+        },
+        {
+          "nome": "Agricultura",
+          "valor": 612900.89
+        },
+        {
+          "nome": "Indústria",
+          "valor": 290788.44
+        },
+        {
+          "nome": "Habitação",
+          "valor": 231648.17
+        }
+      ],
+      "tributos": [
+        {
+          "chave": "iss",
+          "nome": "ISS",
+          "descricao": "Imposto sobre Serviços de Qualquer Natureza",
+          "proprio": true,
+          "valor": 7886174.81
+        },
+        {
+          "chave": "iptu",
+          "nome": "IPTU",
+          "descricao": "Imposto Predial e Territorial Urbano",
+          "proprio": true,
+          "valor": 22842406.11
+        },
+        {
+          "chave": "itbi",
+          "nome": "ITBI",
+          "descricao": "Transmissão de bens imóveis",
+          "proprio": true,
+          "valor": 2886264.02
+        },
+        {
+          "chave": "icms",
+          "nome": "Cota-parte do ICMS",
+          "descricao": "Repasse estadual proporcional ao valor adicionado do município",
+          "proprio": false,
+          "valor": 28231220.01
+        },
+        {
+          "chave": "fpm",
+          "nome": "FPM",
+          "descricao": "Fundo de Participação dos Municípios",
+          "proprio": false,
+          "valor": 43506098.04
+        },
+        {
+          "chave": "ipva",
+          "nome": "Cota-parte do IPVA",
+          "descricao": "Repasse estadual sobre veículos licenciados no município",
+          "proprio": false,
+          "valor": 9937689.89
+        }
+      ]
+    },
+    {
+      "ano": 2023,
+      "populacao": 41690,
+      "receitaTotal": 199139714.12,
+      "receitaLiquida": 182754438.33,
+      "receitasCorrentes": 189184155.78,
+      "receitasCapital": 9955558.34,
+      "despesaTotal": 185217618.76,
+      "despesaPaga": 178778539.66,
+      "receitasPorOrigem": [
+        {
+          "nome": "Transferências Correntes",
+          "valor": 135038109.32
+        },
+        {
+          "nome": "Impostos, Taxas e Contribuições de Melhoria",
+          "valor": 45244148.29
+        },
+        {
+          "nome": "Transferências de Capital",
+          "valor": 9877558.34
+        },
+        {
+          "nome": "Outras Receitas Correntes",
+          "valor": 3440859.35
+        },
+        {
+          "nome": "Receita Patrimonial",
+          "valor": 2793499.53
+        },
+        {
+          "nome": "Contribuições",
+          "valor": 2667539.29
+        },
+        {
+          "nome": "Alienação de Bens",
+          "valor": 78000
+        }
+      ],
+      "despesasPorFuncao": [
+        {
+          "nome": "Educação",
+          "valor": 55850277.86
+        },
+        {
+          "nome": "Saúde",
+          "valor": 55758057.74
+        },
+        {
+          "nome": "Urbanismo",
+          "valor": 23209023.92
+        },
+        {
+          "nome": "Administração",
+          "valor": 15119774.32
+        },
+        {
+          "nome": "Transporte",
+          "valor": 6312886.2
+        },
+        {
+          "nome": "Segurança Pública",
+          "valor": 6309983.51
+        },
+        {
+          "nome": "Assistência Social",
+          "valor": 5710908.59
+        },
+        {
+          "nome": "Cultura",
+          "valor": 5069788.43
+        },
+        {
+          "nome": "Gestão Ambiental",
+          "valor": 2814524.81
+        },
+        {
+          "nome": "Comércio e Serviços",
+          "valor": 2666070.54
+        },
+        {
+          "nome": "Legislativa",
+          "valor": 2228402
+        },
+        {
+          "nome": "Encargos Especiais",
+          "valor": 2181362.85
+        },
+        {
+          "nome": "Desporto e Lazer",
+          "valor": 810070.02
+        },
+        {
+          "nome": "Agricultura",
+          "valor": 658045.09
+        },
+        {
+          "nome": "Indústria",
+          "valor": 401413.65
+        },
+        {
+          "nome": "Habitação",
+          "valor": 117029.23
+        }
+      ],
+      "tributos": [
+        {
+          "chave": "iss",
+          "nome": "ISS",
+          "descricao": "Imposto sobre Serviços de Qualquer Natureza",
+          "proprio": true,
+          "valor": 9676230.05
+        },
+        {
+          "chave": "iptu",
+          "nome": "IPTU",
+          "descricao": "Imposto Predial e Territorial Urbano",
+          "proprio": true,
+          "valor": 26471697.96
+        },
+        {
+          "chave": "itbi",
+          "nome": "ITBI",
+          "descricao": "Transmissão de bens imóveis",
+          "proprio": true,
+          "valor": 3264783.71
+        },
+        {
+          "chave": "icms",
+          "nome": "Cota-parte do ICMS",
+          "descricao": "Repasse estadual proporcional ao valor adicionado do município",
+          "proprio": false,
+          "valor": 28007359.69
+        },
+        {
+          "chave": "fpm",
+          "nome": "FPM",
+          "descricao": "Fundo de Participação dos Municípios",
+          "proprio": false,
+          "valor": 45098936.17
+        },
+        {
+          "chave": "ipva",
+          "nome": "Cota-parte do IPVA",
+          "descricao": "Repasse estadual sobre veículos licenciados no município",
+          "proprio": false,
+          "valor": 12433101.55
+        }
+      ]
+    },
+    {
+      "ano": 2024,
+      "populacao": 40323,
+      "receitaTotal": 224074422.65,
+      "receitaLiquida": 205691314.1,
+      "receitasCorrentes": 211022998.68,
+      "receitasCapital": 13051423.97,
+      "despesaTotal": 208702739.76,
+      "despesaPaga": 195890772.9,
+      "receitasPorOrigem": [
+        {
+          "nome": "Transferências Correntes",
+          "valor": 154278990.68
+        },
+        {
+          "nome": "Impostos, Taxas e Contribuições de Melhoria",
+          "valor": 48258788.84
+        },
+        {
+          "nome": "Transferências de Capital",
+          "valor": 10527857.24
+        },
+        {
+          "nome": "Outras Receitas Correntes",
+          "valor": 3486723.77
+        },
+        {
+          "nome": "Contribuições",
+          "valor": 2962521.01
+        },
+        {
+          "nome": "Operações de Crédito",
+          "valor": 2523566.73
+        },
+        {
+          "nome": "Receita Patrimonial",
+          "valor": 2035974.38
+        }
+      ],
+      "despesasPorFuncao": [
+        {
+          "nome": "Saúde",
+          "valor": 63606853.84
+        },
+        {
+          "nome": "Educação",
+          "valor": 59025385.97
+        },
+        {
+          "nome": "Urbanismo",
+          "valor": 26647029.6
+        },
+        {
+          "nome": "Administração",
+          "valor": 14996471.97
+        },
+        {
+          "nome": "Segurança Pública",
+          "valor": 8255841.57
+        },
+        {
+          "nome": "Transporte",
+          "valor": 6669086.72
+        },
+        {
+          "nome": "Assistência Social",
+          "valor": 6418581.72
+        },
+        {
+          "nome": "Cultura",
+          "valor": 6376570.95
+        },
+        {
+          "nome": "Comércio e Serviços",
+          "valor": 5012657.3
+        },
+        {
+          "nome": "Encargos Especiais",
+          "valor": 3525979.67
+        },
+        {
+          "nome": "Gestão Ambiental",
+          "valor": 3094380.24
+        },
+        {
+          "nome": "Legislativa",
+          "valor": 2706232.27
+        },
+        {
+          "nome": "Desporto e Lazer",
+          "valor": 887041.15
+        },
+        {
+          "nome": "Agricultura",
+          "valor": 760909.52
+        },
+        {
+          "nome": "Indústria",
+          "valor": 436849.98
+        },
+        {
+          "nome": "Habitação",
+          "valor": 282867.29
+        }
+      ],
+      "tributos": [
+        {
+          "chave": "iss",
+          "nome": "ISS",
+          "descricao": "Imposto sobre Serviços de Qualquer Natureza",
+          "proprio": true,
+          "valor": 11093493.03
+        },
+        {
+          "chave": "iptu",
+          "nome": "IPTU",
+          "descricao": "Imposto Predial e Territorial Urbano",
+          "proprio": true,
+          "valor": 26917695.8
+        },
+        {
+          "chave": "itbi",
+          "nome": "ITBI",
+          "descricao": "Transmissão de bens imóveis",
+          "proprio": true,
+          "valor": 3450640.85
+        },
+        {
+          "chave": "icms",
+          "nome": "Cota-parte do ICMS",
+          "descricao": "Repasse estadual proporcional ao valor adicionado do município",
+          "proprio": false,
+          "valor": 30148624.08
+        },
+        {
+          "chave": "fpm",
+          "nome": "FPM",
+          "descricao": "Fundo de Participação dos Municípios",
+          "proprio": false,
+          "valor": 52463583.02
+        },
+        {
+          "chave": "ipva",
+          "nome": "Cota-parte do IPVA",
+          "descricao": "Repasse estadual sobre veículos licenciados no município",
+          "proprio": false,
+          "valor": 12982999.59
+        }
+      ]
+    }
+  ],
+  "ultimoAno": 2024
+}

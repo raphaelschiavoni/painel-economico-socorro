@@ -1,0 +1,16 @@
+.git
+.gitignore
+.dockerignore
+.claude
+node_modules
+.next
+out
+*.tsbuildinfo
+next-env.d.ts
+README.md
+DEPLOY.md
+desktop.ini
+**/desktop.ini
+Thumbs.db
+**/Thumbs.db
+.DS_Store
